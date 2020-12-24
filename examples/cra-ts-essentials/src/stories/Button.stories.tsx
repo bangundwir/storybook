@@ -20,7 +20,6 @@ Primary.args = {
   children: 'foo',
   size: 'large',
 };
-Primary.decorators = [];
 
 const ContextTemplate: Story<ButtonProps> = ({ args }) => <Button {...args} />;
 
@@ -29,6 +28,6 @@ Secondary.parameters = {
   passArgsFirst: false,
 };
 Secondary.args = {
-  children: 'bar',
+  children: 'Children coming from story args!',
   primary: false,
 };
